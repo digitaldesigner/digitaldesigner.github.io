@@ -1,0 +1,104 @@
+/* Layout */
+
+    body.page-gadget {
+        padding-top:30px;
+    }
+    .columnLayout.single {
+        margin: 20px auto;
+        max-width: 745px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        color:#1b2733;
+        font-size: 16px;
+        line-height: 26px;
+        position:relative;
+        clear:both;
+    }
+
+/* Typography */
+    
+    @import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
+    
+    .wiki-content a,
+    .wiki-content a:link,
+    .wiki-content a:visited,
+    .wiki-content a:focus,
+    .wiki-content a:hover,
+    .wiki-content a:active {
+        color:#0070e0!important;
+    }
+
+    .wiki-content h1,
+    .wiki-content h2,
+    .wiki-content h3,
+    .wiki-content h4,
+    .wiki-content h5 {
+        font-family: 'Roboto', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        font-weight:400;
+        color:#1b2733;
+    }
+
+    .wiki-content h1 strong,
+    .wiki-content h2 strong,
+    .wiki-content h3 strong,
+    .wiki-content h4 strong,
+    .wiki-content h5 strong {
+        font-weight:500;
+    }
+
+    .wiki-content h2 {
+        font-size:22px;
+        margin-top:30px;
+    }
+
+    .wiki-content h3 {
+        font-size:20px;
+    }
+
+    .wiki-content p {
+        margin-bottom: 25px;
+    }
+
+    .wiki-content p em {
+        font-size:14px;
+        color:#9ca9b7;
+    }
+    
+    .wiki-content ul,
+    .wiki-content ol {
+        margin-bottom:40px;
+    }
+
+    .wiki-content ul li,
+    .wiki-content ol li {
+        margin-bottom:10px;
+        font-size:15px;
+    }
+
+/* Decorative elements */
+    
+    .wiki-content .confluence-embedded-file-wrapper,
+    .wiki-content .image-center-wrapper {
+        float:left;
+        margin-bottom:-5px;
+    }
+
+    .wiki-content img {
+        max-width:100%;
+        border: 4px solid #FFF;
+        box-sizing: border-box;
+    }
+
+    .wiki-content img:hover {
+        border-color:#0070E0;
+    }
+
+    .wiki-content hr {
+        width: 4px;
+        height: 4px;
+        background: #C1CBD4;
+        border-radius: 4px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        border:none;
+    }
