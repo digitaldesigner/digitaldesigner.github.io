@@ -93,6 +93,12 @@
         border-color:#0070E0;
     }
 
+    .wiki-content img.confluence-embedded-image,
+    .wiki-content img.editor-inline-macro,
+    .wiki-content table.wysiwyg-macro {
+        cursor:zoom-in;    
+    }
+
     .wiki-content hr {
         width: 4px;
         height: 4px;
