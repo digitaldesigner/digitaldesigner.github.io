@@ -3,8 +3,10 @@ Let's be honest, reading documents on Confluence is a painful experience. The li
 
 ## How to use  
 1. In Confluence Edit mode, add a new Full-width section
-2. In this new section, hit that + icon, choose Other Macro > Style Macro (search for CSS)
-3. Paste the CSS from this Repo into the widget
+2. In the new section, hit the + icon, choose Other Macro > Style Macro (search for CSS)
+3. In the Import field, paste `https://digitaldesigner.github.io/atlassian-paper/paper-confluence.css`
+
+![Widget](https://dha4w82d62smt.cloudfront.net/items/3I1q302w1H1C0P0v2d1u/Screen%20Shot%202018-05-21%20at%2010.17.05%20am.png?X-CloudApp-Visitor-Id=2741439&v=8b846500)
 
 Note that the styles won't be visible until you Preview or Publish the page. There's nothing I can do to help style the editing view. God-speed.
 
