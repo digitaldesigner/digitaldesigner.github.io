@@ -52,7 +52,7 @@
     }
 
     .wiki-content h3 {
-        font-size:20px;
+        font-size:18px;
     }
 
     .wiki-content p {
@@ -62,6 +62,16 @@
     .wiki-content p em {
         font-size:14px;
         color:#9ca9b7;
+    }
+
+    .wiki-content p code {
+        background: #f7f9fa;
+        border: 1px solid #e6e8eb;
+        color: #1b2733;
+        font-size: 14px;
+        padding: 2px 5px;
+        margin-bottom: 0;
+        border-radius: 2px;
     }
     
     .wiki-content ul,
