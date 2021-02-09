@@ -1,0 +1,140 @@
+/* Mailbox folders & default behavior */
+
+section .c-app-layout__sidebar--left i {
+  color:#556575;
+}
+section .c-app-layout__sidebar--left h2 {
+  color:#253642;
+  font-size:18px;
+  font-weight:500;
+  -webkit-font-smoothing: antialiased;
+}
+.sidebar-dropdown__item {
+  margin-top:3px;
+  margin-bottom:13px!important;
+}
+.nav-stacked>li>a {
+  color:#405261;
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 40px;
+  border-radius:4px;
+}
+.nav-stacked.mailbox>li>a.folder {
+  padding-left:45px;
+}
+.nav-stacked i {
+  top:8px;
+  left:12px;
+}
+.nav-stacked>li {
+  margin:0;
+}
+ul.nav li.active a{
+  font-weight:500;
+}
+ul.nav li.active i {
+  color:#1292EE;
+}
+ul.nav li.active {
+  background:white;
+}
+ul.nav li.active .badge {
+  font-weight:500;
+  color:#0077CC;
+}
+.nav-stacked .badge {
+  background:white;
+  border-radius:50px;
+  font-family:'Roboto Mono',monospace;
+  font-size: 13px;
+  padding:2px 7px;
+  font-weight: normal;
+  top:2px;
+  right:10px;
+  transform:translateY(50%);
+}
+li.chat .badge {
+  display:none;
+}
+ul.nav.mailbox {
+  margin-left:5px; 
+  margin-right:5px;
+}
+ul.nav li {
+  border-radius:4px;
+}
+ul.nav li.active a:hover {
+  background:none;
+}
+
+/* Non-default folders */
+
+.mb-folder-heading {
+  color:#253642;
+  margin-bottom:15px;
+}
+#teamFolders,#smartFolders {
+  padding-top:25px;
+  margin-top:-5px;
+  position:relative;
+}
+#teamFolders:before,#smartFolders:before {
+  content:'';
+  position:absolute;
+  width:220px;
+  height:1px;
+  background:#D5DCE1;
+  left:15px;
+  top:0;
+}
+ul.nav.no-icons li a {
+  margin:0px 5px;
+  padding-left:15px;
+  padding-right:15px;
+}
+ul.nav.no-icons li.active {
+  background:none;
+}
+ul.nav.no-icons li.active a {
+  background:white;
+}
+
+/* Sidebar actions */
+
+.s-folder-nav-settings {
+  position:fixed;
+  bottom:010px;
+  left:10px; 
+  width:230px;
+  border:1px solid #C5CED6;
+  border-radius:4px;
+  background:#E5E9EC;
+}
+.s-folder-nav-settings a {
+  border:none;
+  background:none;
+  height:40px;
+  padding:0;
+}
+a.js-new-convo-link {
+  border-left:1px solid #C5CED6;
+}
+.js-settings a i {
+  top:8px;
+}
+.js-settings a b {
+  top:3px;
+}
+
+/* Header */
+
+#header {
+  background:#003B94;
+}
+.hsds-react .bSfyaR {
+  border-color:#003B94;
+}
+.c-StatusDot {
+  box-shadow:0 0 0 2px #003B94;
+}
