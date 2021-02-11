@@ -20,6 +20,14 @@ section .c-app-layout__sidebar--left h2 {
   line-height: 40px;
   border-radius:4px;
 }
+.nav-stacked>li>a:focus {
+  outline:none;
+  box-shadow:inset 0 0 0 2px #1292EE;
+}
+.nav-stacked>li>a:active {
+  outline:none;
+  box-shadow:none;
+}
 .nav-stacked.mailbox>li>a.folder {
   padding-left:45px;
 }
@@ -43,6 +51,12 @@ ul.nav li.active .badge {
   font-weight:500;
   color:#0077CC;
 }
+
+ul.nav li.attn.active .badge,
+ul.nav li.attn.active i {
+  color:#e52f28;
+}
+
 .nav-stacked .badge {
   background:white;
   border-radius:50px;
