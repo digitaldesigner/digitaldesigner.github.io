@@ -51,12 +51,10 @@ ul.nav li.active .badge {
   font-weight:500;
   color:#0077CC;
 }
-
 ul.nav li.attn.active .badge,
 ul.nav li.attn.active i {
   color:#e52f28;
 }
-
 .nav-stacked .badge {
   background:white;
   border-radius:50px;
@@ -142,7 +140,7 @@ a.js-new-convo-link {
 }
 
 /* Header */
-
+/*
 #header {
   background:#003B94;
 }
@@ -151,4 +149,74 @@ a.js-new-convo-link {
 }
 .c-StatusDot {
   box-shadow:0 0 0 2px #003B94;
+}
+*/
+
+/* Sidebar Properties */
+#properties ul.c-sb-list.c-sb-list--two-line  {
+  margin-top:8px;
+  padding-bottom:42px;
+}
+
+#properties ul.c-sb-list.c-sb-list--two-line li {
+  background:#F9FAFA;
+  margin-bottom:4px;
+  border-radius:4px;
+  box-sizing:border-box;
+  padding:8px 10px 10px;
+  font-size:13px;
+  color:#556575;
+  position:relative;
+  line-height:17px;
+}
+
+#properties ul.c-sb-list.c-sb-list--two-line li::after {
+  content:'';
+  position:absolute;
+  width:24px;
+  height:24px;
+  overflow:hidden;
+  background:url('https://assets.codepen.io/1131375/icon-copy.svg') center no-repeat;
+  right:10px;
+  top:50%;
+  margin-top:-12px;
+  opacity:0;
+  transition:all 0.2s;
+}
+
+#properties ul.c-sb-list.c-sb-list--two-line li:hover {
+  background:#F3FBFF;
+}
+
+#properties ul.c-sb-list.c-sb-list--two-line li:hover::after {
+  opacity:1;
+}
+
+#properties ul.c-sb-list.c-sb-list--two-line span {
+  color:#253642;
+  font-weight:500;
+  -webkit-font-smoothing: antialiased;
+  margin-top:2px;
+}
+
+#properties ul.c-sb-list.c-sb-list--two-line::after {
+  content:'Edit Profile';
+  float:left;
+  width:100%;
+  background:red;
+  height:30px;
+  line-height:30px;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F9FAFA 100%);
+  border: 1px solid #B7C2CC;
+  box-shadow: 0px 1px 0px rgba(22, 29, 37, 0.05);
+  border-radius: 3px;
+  font-size:13px;
+  color:#1D2B36;
+  font-weight:500;
+  text-align:center;
+  margin:10px 0 0 0;
+}
+
+.apps-history {
+  margin-top:-5px;
 }
