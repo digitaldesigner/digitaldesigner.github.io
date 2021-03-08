@@ -155,7 +155,11 @@ a.js-new-convo-link {
 /* Sidebar Properties */
 #properties ul.c-sb-list.c-sb-list--two-line  {
   margin-top:8px;
-  padding-bottom:42px;
+  margin-bottom:5px;
+  padding-bottom:0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 300px;
 }
 
 #properties ul.c-sb-list.c-sb-list--two-line li {
@@ -170,18 +174,27 @@ a.js-new-convo-link {
   line-height:17px;
 }
 
+#properties .open .content {
+  padding-bottom:60px;
+}
+
+#properties ul.c-sb-list.c-sb-list--two-line li:last-child {
+  margin-bottom:0;
+}
+
 #properties ul.c-sb-list.c-sb-list--two-line li::after {
   content:'';
   position:absolute;
-  width:24px;
-  height:24px;
+  width:32px;
+  height:32px;
   overflow:hidden;
-  background:url('https://assets.codepen.io/1131375/icon-copy.svg') center no-repeat;
-  right:10px;
+  background:url('https://assets.codepen.io/1131375/icon-copy.svg') #F3FBFF center no-repeat;
+  right:6px;
   top:50%;
-  margin-top:-12px;
+  margin-top:-16px;
   opacity:0;
   transition:all 0.2s;
+  border-radius:50%;
 }
 
 #properties ul.c-sb-list.c-sb-list--two-line li:hover {
@@ -199,10 +212,14 @@ a.js-new-convo-link {
   margin-top:2px;
 }
 
-#properties ul.c-sb-list.c-sb-list--two-line::after {
-  content:'Edit Profile';
+#properties ul.c-sb-list.c-sb-list--two-line a span {
+  color:#0077CC;
+}
+
+#properties .open::after {
+  content:'Edit Properties';
   float:left;
-  width:100%;
+  width:245px;
   background:red;
   height:30px;
   line-height:30px;
@@ -214,7 +231,7 @@ a.js-new-convo-link {
   color:#1D2B36;
   font-weight:500;
   text-align:center;
-  margin:10px 0 0 0;
+  margin:-50px 0 0 12px;
 }
 
 .apps-history {
