@@ -1,0 +1,379 @@
+/* 
+
+  For use with https://stylebot.dev/
+  -
+	Left sidebar nav
+
+*/
+
+section .c-app-layout__sidebar--left i {
+  color:#93A1B0;
+}
+section .c-app-layout__sidebar--left h2 {
+  color:#253642;
+  font-size:18px;
+  font-weight:500;
+  -webkit-font-smoothing: antialiased;
+}
+.nav-stacked>li>a {
+  color:#405261;
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 40px;
+  border-radius:4px;
+}
+.nav-stacked>li>a:focus {
+  outline:none;
+  box-shadow:inset 0 0 0 2px #1292EE;
+}
+.nav-stacked>li>a:active {
+  outline:none;
+  box-shadow:none;
+}
+.nav-stacked.mailbox>li>a.folder {
+  padding-left:45px;
+}
+.nav-stacked i {
+  top:8px;
+  left:12px;
+}
+.nav-stacked>li {
+  margin:0;
+}
+.nav-stacked .badge {
+  background:white;
+  border-radius:50px;
+  font-family:'Roboto Mono',monospace;
+  font-size: 13px;
+  padding:2px 7px;
+  font-weight: normal;
+  top:2px;
+  right:10px;
+  transform:translateY(50%);
+}
+ul.nav li:hover i {
+  color:#748494;
+}
+ul.nav li.active a{
+  font-weight:500;
+}
+ul.nav li.active i {
+  color:#1292EE;
+}
+ul.nav li.active {
+  background:white;
+}
+ul.nav li.active .badge {
+  font-weight:500;
+  color:#0077CC;
+}
+ul.nav li.attn.active .badge,
+ul.nav li.attn.active i {
+  color:#e52f28;
+}
+ul.nav li.active.spam a.trash i {
+  top: 4px;
+  left: 23px;
+  color: #93A1B0;
+}
+ul.nav li.active.spam a.trash i:hover {
+  color:#E52F28;
+}
+ul.nav .badge.t-tx-red-500 {
+  background:#e52f28;
+  color:white;
+  -webkit-font-smoothing: auto;
+}
+ul.nav span.t-tx-red-500 {
+  font-weight:500;
+}
+ul.nav li.active.attn .badge.t-tx-red-500 {
+  background:transparent;
+  color:#e52f28;
+  -webkit-font-smoothing: auto;
+}
+ul.nav li.attn:hover i {
+	color:#E52F28;
+}
+li.chat .badge {
+  display:none;
+}
+ul.nav.mailbox {
+  margin-left:5px; 
+  margin-right:5px;
+}
+ul.nav li {
+  border-radius:4px;
+}
+ul.nav li.active a:hover {
+  background:none;
+}
+
+/* 
+
+	Mailbox sidebar > Non-default folders
+	i.e. Team and Views (nee Folders)
+
+*/
+
+.mb-folder-heading {
+  color:#253642;
+  margin-bottom:15px;
+}
+#smartFolders .mb-folder-heading {
+  position:relative;
+  color:transparent;
+}
+#smartFolders .mb-folder-heading::after {
+  position:absolute;
+  content:'Views';
+  color:#253642;
+  left:20px;
+}
+#teamFolders,#smartFolders {
+  padding-top:25px;
+  margin-top:-5px;
+  position:relative;
+}
+#teamFolders:before,#smartFolders:before {
+  content:'';
+  position:absolute;
+  width:220px;
+  height:1px;
+  background:#D5DCE1;
+  left:15px;
+  top:0;
+}
+ul.nav.no-icons li a {
+  margin:0px 5px;
+  padding-left:15px;
+  padding-right:15px;
+}
+ul.nav.no-icons li.active {
+  background:none;
+}
+ul.nav.no-icons li.active a {
+  background:white;
+}
+
+/*
+
+	Mailbox sidebar actions
+
+*/
+
+.sidebar-dropdown__item {
+  margin-top:3px;
+  margin-bottom:13px!important;
+}
+.sidebar-buttons ul.dropdown-menu {
+  width:240px;
+  left:-7px;
+  bottom:40px;
+  padding:8px 0;
+  border-color:#C5CED6;
+  border-radius:4px;
+  box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.08);
+}
+.sidebar-buttons .btn-group.open {
+  background:#D6DDE1;
+}
+.sidebar-buttons .btn-group.open i {
+  color:#405261;
+}
+.sidebar-buttons .btn-group.open .caret {
+  transform:rotate(315deg);
+  top:5px
+}
+.sidebar-buttons ul.dropdown-menu li {
+  height:36px;
+  margin:0 0 2px 0;
+}
+.sidebar-buttons ul.dropdown-menu li a {
+  box-sizing:border-box;
+  padding:0 20px ;
+  line-height:36px;
+  color:#314351;
+}
+.s-folder-nav-settings {
+  position:fixed;
+  bottom:010px;
+  left:10px; 
+  width:230px;
+  border:1px solid #C5CED6;
+  border-radius:4px;
+  background:#E5E9EC;
+}
+.s-folder-nav-settings a {
+  border:none;
+  background:none;
+  height:40px;
+  padding:0;
+}
+a.js-new-convo-link {
+  border-left:1px solid #C5CED6;
+}
+.js-settings a i {
+  top:8px;
+}
+.js-settings a b {
+  top:3px;
+}
+.c-app-layout__sub-menu .sidebar-buttons .btn>.caret {
+  border-right-color:#556575;
+  border-top-color:#556575;
+}
+.c-app-layout__sub-menu .sidebar-buttons i {
+  color:#556575;
+}
+.c-app-layout__sub-menu .sidebar-buttons a:hover i{
+  color:#405261;
+}
+
+/* 
+
+	Right sidebar properties
+	& avatar tweaks
+
+*/
+
+#properties ul.c-sb-list.c-sb-list--two-line  {
+  margin-top:8px;
+  margin-bottom:5px;
+  padding-bottom:0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 300px;
+}
+#properties ul.c-sb-list.c-sb-list--two-line li {
+  background:#F9FAFA;
+  margin-bottom:4px;
+  border-radius:4px;
+  box-sizing:border-box;
+  padding:8px 10px 10px;
+  font-size:13px;
+  color:#556575;
+  position:relative;
+  line-height:17px;
+}
+#properties .open .content {
+  padding-bottom:60px;
+}
+#properties ul.c-sb-list.c-sb-list--two-line li:last-child {
+  margin-bottom:0;
+}
+#properties ul.c-sb-list.c-sb-list--two-line li::after {
+  content:'';
+  position:absolute;
+  width:32px;
+  height:32px;
+  overflow:hidden;
+  background:url('https://assets.codepen.io/1131375/icon-copy.svg') #F3FBFF center no-repeat;
+  right:6px;
+  top:50%;
+  margin-top:-16px;
+  opacity:0;
+  transition:all 0.2s;
+  border-radius:50%;
+  cursor:pointer;
+}
+#properties ul.c-sb-list.c-sb-list--two-line li:hover {
+  background:#F3FBFF;
+}
+#properties ul.c-sb-list.c-sb-list--two-line li:hover::after {
+  opacity:1;
+}
+#properties ul.c-sb-list.c-sb-list--two-line span {
+  color:#253642;
+  font-weight:500;
+  -webkit-font-smoothing: antialiased;
+  margin-top:2px;
+}
+#properties ul.c-sb-list.c-sb-list--two-line a span {
+  color:#0077CC;
+}
+#properties .open::after {
+  content:'Edit Properties';
+  float:left;
+  width:245px;
+  background:red;
+  height:30px;
+  line-height:30px;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F9FAFA 100%);
+  border: 1px solid #B7C2CC;
+  box-shadow: 0px 1px 0px rgba(22, 29, 37, 0.05);
+  border-radius: 3px;
+  font-size:13px;
+  color:#1D2B36;
+  font-weight:500;
+  text-align:center;
+  margin:-50px 0 0 12px;
+  cursor:pointer;
+}
+.apps-history {
+  margin-top:-5px;
+}
+.avatar.c-avatar a.profile-edit,
+a.profile-edit img {
+  position:relative;
+}
+.avatar.c-avatar a.profile-edit::before {
+  position:absolute;
+  left:0;
+  top:30px;
+  content:'';
+  width:68px;
+  height:68px;
+  overflow:hidden;
+  background:rgba(0,0,0,0.4);
+  z-index:2;
+  border-radius:50%;
+  transition:all 0.25s;
+  transform:scale(0);
+}
+.avatar.c-avatar a.profile-edit:hover::before {
+  transform:scale(1);
+}
+.avatar.c-avatar a.profile-edit::after {
+  position:absolute;
+  content:'';
+  width:24px;
+  height:24px;
+  transition:all 0.2s;
+  background:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M17.707 9.874l-1.209 1.209-3.569-3.57 1.194-1.212a.993.993 0 0 1 .709-.298h.004c.267 0 .518.104.707.292l2.164 2.164a.998.998 0 0 1 0 1.414zM9.586 18H6v-3.448l.564-.574 3.522 3.522-.5.5zm1.913-1.915l-3.532-3.532 3.559-3.615 3.559 3.559-3.586 3.588zM16.957 4.88c-.569-.57-1.318-.914-2.131-.878a2.98 2.98 0 0 0-2.126.892l-8.414 8.548a1.001 1.001 0 0 0-.286.7V18c0 1.103.897 2 2 2h4c.266 0 .52-.106.707-.294l8.414-8.42A2.98 2.98 0 0 0 20 9.165c0-.801-.313-1.554-.879-2.121L16.957 4.88z" fill="white"></path></svg>');
+  left:20px;
+  top:55px;
+  opacity:0;
+  z-index:3;
+}
+.avatar.c-avatar a.profile-edit:hover::after {
+  top:52px;
+  opacity:1;
+}
+
+/*
+  Folder headers
+*/
+
+#mainCol {
+  padding-top:60px;
+}
+#mainCol::before {
+  content:'Folder Name';
+  position:absolute;
+  top:19px;
+  left:15px;
+  color:#1D2B36;
+  font-size:18px;
+  font-weight:500;
+  -webkit-font-smoothing: antialiased;
+}
+#mainCol::after {
+  position:absolute;
+  width:58px;
+  height:24px;
+  background:url('https://assets.codepen.io/t-1529/folder-actions-right.svg') center no-repeat;
+  content:'';
+  right:22px;
+  top:18px;
+}
